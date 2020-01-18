@@ -7,10 +7,10 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 @EnableJpaRepositories(basePackageClasses = UserRepository.class)
-public class SpringSecurityJpaApplication {
+public class Main {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringSecurityJpaApplication.class, args);
+		SpringApplication.run(Main.class, args);
 	}
 
 }
