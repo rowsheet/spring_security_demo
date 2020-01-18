@@ -1,6 +1,6 @@
-package com.rowsheet.springsecurityjpa;
+package com.rowsheet.springsecurityjpa.security;
 
-import com.rowsheet.springsecurityjpa.models.MyUserDetails;
+import com.rowsheet.springsecurityjpa.models.UserRepository;
 import com.rowsheet.springsecurityjpa.models.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;

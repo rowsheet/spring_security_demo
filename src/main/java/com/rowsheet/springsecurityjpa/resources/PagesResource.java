@@ -1,4 +1,4 @@
-package com.rowsheet.springsecurityjpa;
+package com.rowsheet.springsecurityjpa.resources;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/pages")
-public class HomeResource {
+public class PagesResource {
     @GetMapping("/")
     public String home() {
         return ("<h1>Welcome</h1>");

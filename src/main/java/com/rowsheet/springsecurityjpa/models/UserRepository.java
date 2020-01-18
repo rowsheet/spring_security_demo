@@ -1,4 +1,4 @@
-package com.rowsheet.springsecurityjpa;
+package com.rowsheet.springsecurityjpa.models;
 
 import com.rowsheet.springsecurityjpa.models.User;
 import org.springframework.data.jpa.repository.JpaRepository;

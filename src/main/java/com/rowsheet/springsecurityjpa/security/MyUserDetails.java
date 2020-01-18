@@ -1,5 +1,6 @@
-package com.rowsheet.springsecurityjpa.models;
+package com.rowsheet.springsecurityjpa.security;
 
+import com.rowsheet.springsecurityjpa.models.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
