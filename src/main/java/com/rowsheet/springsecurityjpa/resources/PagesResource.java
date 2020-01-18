@@ -66,4 +66,46 @@ public class PagesResource {
         commentRepository.save(comment);
         return comment;
     }
+
+    /**
+     * @TODO This does not work as the generated id for comments is the same for both entities.
+     */
+    @GetMapping("/temp")
+    public String temp() {
+        // Create post.
+
+        final String title = "unit test TITLE";
+        final String content = "unit test CONTENT";
+
+        Post post = new Post();
+
+        post.setTitle(title);
+        post.setContent(content);
+
+        // Crate comments.
+
+        final String author1 = "unit test AUTHOR 1";
+        final String content1 = "unit test CONTENT 1";
+        final String author2 = "unit test AUTHOR 2";
+        final String content2 = "unit test CONTENT 2";
+
+        Comment comment1 = new Comment();
+        Comment comment2 = new Comment();
+
+        comment1.setAuthor(author1);
+        comment1.setContent(content1);
+        comment2.setAuthor(author2);
+        comment2.setContent(content2);
+
+        // Add comments to post
+
+        post.getComments().add(comment1);
+        post.getComments().add(comment2);
+
+        // Save posts.
+
+        postRepository.save(post);
+
+        return "TEMP";
+    }
 }
