@@ -191,8 +191,8 @@ COPY public.posts (id, title, content) FROM stdin;
 --
 
 COPY public.users (id, active, password, roles, username) FROM stdin;
-1	t	$2a$10$NJJVlW99rM0hcZ1DVpZOU.Dd6OurIBvc7CKF5fzLYp6LnIZDxWJbi	ROLE_USER	user
-2	t	$2a$10$NJJVlW99rM0hcZ1DVpZOU.Dd6OurIBvc7CKF5fzLYp6LnIZDxWJbi	ROLE_ADMIN	admin
+2	t	$2y$10$gfAGRsdY5PksXUEeqrhuKOQE2GKs8UI9JrWEOm8w0z4MPIpHQimLC	ROLE_ADMIN	admin
+1	t	$2y$10$gfAGRsdY5PksXUEeqrhuKOQE2GKs8UI9JrWEOm8w0z4MPIpHQimLC	ROLE_USER	user
 \.
 
 
